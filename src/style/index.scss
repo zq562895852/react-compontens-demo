@@ -1,0 +1,9 @@
+// config  导入的时候不需要下划线 ，scss的模块化支持
+@import "variables";
+@import "reboot";
+@import "mixin";
+
+// button样式
+@import "../components/Button/style";
+// menu
+@import "../components//Menu/style"
