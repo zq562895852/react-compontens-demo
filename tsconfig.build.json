@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        // 输出目录
+        "outDir": "dist",
+        // es模块
+        "module": "esnext",
+        "target": "es5",
+        // 类型定义 设置为true会为每个文件定义一个类型声明文件
+        "declaration": true,
+        // react17 采用react-jsx
+        "jsx": "react-jsx",
+        // 模块查找方式采用node，否则模块可能找不到
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true
+    },
+    // 编译哪些文件
+    "include": [
+        "src"
+    ],
+    // 忽略哪些的文件
+    "exclude": [
+        "src/**/*.test.tsx",
+        "src/**/*.stories.tsx"
+    ]
+}

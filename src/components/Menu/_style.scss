@@ -62,7 +62,7 @@
     position: relative;
 
     .sub-menu {
-        display: none;
+        // display: none;
         position: absolute;
 
         .menu-item {
@@ -71,6 +71,6 @@
     }
 
     .menu-open {
-        display: block;
+        // display: block;
     }
 }

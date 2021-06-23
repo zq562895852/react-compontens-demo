@@ -3,6 +3,11 @@ import classNames from 'classnames';
 
 import { MenuContext } from './Menu'
 import { MenuItemProps } from './MenuItem'
+import Icon from '../Icon/Icon';
+// import { Transition } from 'react-transition-group';
+import Transition from '../Transiton/Transition'
+
+
 
 export interface SubMenuProps {
     title: string;
@@ -66,15 +71,18 @@ const SubMenuItem: React.FC<SubMenuProps> = (props) => {
             }
         })
         return (
-            <ul className={subMenuClasses}>
-                { childrenComponent}
-            </ul>
+            <Transition in={menuOpen} timeout={500} animation='zoom-in-left'>
+                <ul className={subMenuClasses}>
+                    {childrenComponent}
+                </ul>
+            </Transition>
+
         )
     }
     return (
         <li key={index} className={classes} style={style} {...hoverEvents}>
             <div className='submenu-title' {...clickEvents}>
-                {title}
+                {title}  <Icon icon="angle-down" />
             </div>
             { renderChildren()}
         </li>

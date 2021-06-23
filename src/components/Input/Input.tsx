@@ -1,4 +1,4 @@
-import react, { FC, InputHTMLAttributes, ReactElement } from 'react';
+import { FC, InputHTMLAttributes, ReactElement } from 'react';
 // 拼接类名的库
 import classNames from 'classnames'
 type InputSize = 'lg' | 'sm';
